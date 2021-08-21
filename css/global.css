@@ -1,6 +1,12 @@
 h1, h2, h3, h4, h5{
     font-weight: 700;
 }
+a{
+    color: var(--primary)
+}
+a:hover{
+    color: var(--secondary);
+}
 .title{
     text-transform: uppercase;
 }
@@ -53,4 +59,19 @@ h1, h2, h3, h4, h5{
 }
 #colunaproblematica{
     padding-top: 50px;
+}
+
+#servicos a.destaque{
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    color: black;
+    text-decoration: none;
+    transition: all ease-out o.2;
+}
+
+#servicos a.destaque:hover{
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
 }
