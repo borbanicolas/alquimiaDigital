@@ -61,8 +61,10 @@ a:hover{
     padding-top: 50px;
 }
 
+
 #servicos a.destaque{
     display: block;
+    background: var(--light);
     border-radius: 5px;
     text-align: center;
     padding: 20px;
@@ -71,7 +73,21 @@ a:hover{
     transition: all ease-out o.2;
 }
 
+
 #servicos a.destaque:hover{
     background-color: white;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+    transform: scale(1.05);
+}
+#servico{
+color: var(--dark);
+}
+#servico .img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+#servico a.destaque.img-container img {
+    max-height: 160px;
 }
