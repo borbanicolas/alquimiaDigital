@@ -59,6 +59,7 @@ html{
     color: black;
     text-decoration: none;
     transition: all ease-out o.2;
+    height: 200px;
 }
 
 
@@ -127,6 +128,10 @@ color: var(--dark);
     color: #b4b4b4;
 
 }
+#cliente .block{
+    height: 100px;
+}
+
 #clientes .cliente-text .imagem span{
     color: var(--secondary);
     font-size: 110px;
