@@ -21,4 +21,8 @@
     #servicos a.destaque .img-container img{
         max-height: 120px;
     }
+    #colunalogo{
+        margin-top: 300px;
+        padding-top: 350px;
+    }
 }
