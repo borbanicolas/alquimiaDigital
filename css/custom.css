@@ -124,7 +124,7 @@ color: var(--dark);
     padding: 60px;
     display: flex;
     align-items: center;
-    margin-left: -120px;
+    margin-left: -90px;
     color: #b4b4b4;
 
 }
@@ -145,6 +145,7 @@ color: var(--dark);
     display: flex;
     font-size: 14px;
     color: #b4b4b4;
+    justify-content: space-evenly;
 
 }
 #clientes .cliente-text .telefone span{
