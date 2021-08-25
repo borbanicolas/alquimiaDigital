@@ -35,6 +35,7 @@ html{
 #slider{
     background: url(../assets/slider-bg.svg) no-repeat center bottom;
     background-size: contain;
+    
 }
 #slider h1{
     text-transform: uppercase;
@@ -45,9 +46,7 @@ html{
     font-size: 10px;
     text-transform: uppercase;
 }
-#colunaproblematica{
-    padding-top: 50px;
-}
+
 
 
 #servicos a.destaque{
@@ -59,7 +58,7 @@ html{
     color: black;
     text-decoration: none;
     transition: all ease-out o.2;
-    height: 200px;
+    
 }
 
 
@@ -82,6 +81,10 @@ color: var(--dark);
     max-height: 160px;
 }
 
+#servicos.block{
+    margin-bottom: 70px;
+}
+
 #clientes a.link-clientes{
     padding: 0 15px;
     background: white;
@@ -89,7 +92,7 @@ color: var(--dark);
     align-items: center;
     justify-content: center;
     border: solid 1px var(--light);
-    height: 100px;
+    height: 10px;
     transition: ease-out all 0.2s;
       
 }
@@ -127,9 +130,6 @@ color: var(--dark);
     margin-left: -90px;
     color: #b4b4b4;
 
-}
-#cliente .block{
-    height: 100px;
 }
 
 #clientes .cliente-text .imagem span{
