@@ -7,3 +7,12 @@
     }
 }
 
+let btnsContainer = document.querySelector('#cases .button-group')
+let btn = document.querySelectorAll('button')
+
+btn.forEach(el => {
+    el.addEventListener('click', function(){
+        btnsContainer.querySelector('.active').classList.remove('active');
+        el.classList.add('active');
+    });
+});
