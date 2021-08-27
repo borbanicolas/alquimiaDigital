@@ -155,34 +155,38 @@ color: var(--dark);
     display: block;
 } 
 
-#cases .badge{
-    font-weight: 400;
 
-}
-#cases .element-item img{
-    border-radius: 5px;
-    transition: all ease-out 0.2s;
-}
-#cases .element-item img:hover{
-    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.4);
-}
-#cases .button-group{
-    margin-bottom: 30px;
-    
-}
-#cases .button-group button{
-    background: none;
-    border: none;
-    padding: 0;
-    margin: 0;
-    text-transform: uppercase;
-    font-weight: 900px;
-    outline: none;
 
+#cases section  ul{
+    display:flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.57);
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
 }
-#cases .button-group button + button {
-    margin-left: 30px;
+ul li{
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5px 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 1.2em;
 }
-#cases .button-group button.active{
-    color: var(--primary);
+ul li.active{
+    background-color: var(--primary);
 }
+
+   
+
+
+#cases section  li:hover{
+      cursor: pointer;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
