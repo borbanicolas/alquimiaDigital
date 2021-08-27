@@ -7,49 +7,29 @@
     }
 }
 
-/*let btnsContainer = document.querySelector('#cases .button-group ')
-let btn = document.querySelectorAll('button ')
 
 
-btn.forEach(el => {
-    el.addEventListener('click', function(){
-        btnsContainer.querySelector('.active').classList.remove('active');
-        el.classList.add('active');
+const liItem = document.querySelectorAll('ul li');
+        const imgItem = document.querySelectorAll('.product img');
 
-        let filtro = el.textContent;
-        btnContainer.forEach(btn => {
-            btnContainer.style.display = none;
-            if (btnContainer.getAttribute('data-filter') == filtro.toLowerCase() || filtro == "All Menu"){
-                btnContainer.style.display = 'block';
-            }
-        })
+        liItem.forEach(li => {
+           li.onclick = function() {
+            //active
+            liItem.forEach(li => {
+                li.className = "";
+            })
+            li.className = "active";
 
-         
-      
-    });
-}); */
-
-        let btnscontainer = document.querySelectorAll('#cases .button-group button')
-        let imgItem = document.querySelectorAll('.row  .element-item img ')
-
-        btnscontainer.forEach(button => {
-            button.onclick = function(){
-                btnscontainer.forEach(button => {
-                    button.className = ""
-
-                })
-                button.className = "active" 
-                
-                let filtroDoAgoraVai = button.textContent
-                imgItem.forEach(img => {
-                    img.style.display = 'none'
-                    if(img.getAttribute('data-filter') == filtroDoAgoraVai.toLowerCase() || filtroDoAgoraVai == "Todos"){
-                        img.style.display = 'block'
-                    }
-                })
-            }
-        })
-
+            //Filter
+            const value = li.textContent;
+            imgItem.forEach(img => {
+                img.style.display = 'none';
+                if (img.getAttribute('data-filter') == value.toLowerCase() || value == "All Menu") {
+                    img.style.display = 'block';
+                }
+            })
+           }
+        });
 
 
 
