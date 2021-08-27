@@ -10,7 +10,7 @@
 
 
 const liItem = document.querySelectorAll('ul li');
-        const imgItem = document.querySelectorAll('.product img');
+        const imgItem = document.querySelectorAll('.product  img');
 
         liItem.forEach(li => {
            li.onclick = function() {
